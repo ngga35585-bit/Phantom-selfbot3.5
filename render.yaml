@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: phantom-selfbot
+    runtime: docker
+    rootDir: phantom-selfbot
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
