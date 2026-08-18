@@ -1,0 +1,2 @@
+# Add one Discord token per line.
+# For hosted runs, prefer DISCORD_TOKEN or DISCORD_TOKEN_1..DISCORD_TOKEN_10.
