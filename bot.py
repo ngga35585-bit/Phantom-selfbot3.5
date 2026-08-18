@@ -2423,5 +2423,5 @@ async def validate_token(token: str) -> tuple[bool, str]:
                     if r.status == 200:
                         data = await r.json()
                         return True, data.get("username", "?")
-                    if r.status == 429:
+                    if r.status != 429:
  
